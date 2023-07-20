@@ -5,11 +5,11 @@ export default function Addf(props) {
     let rightResult = parseInt(props.first)+parseInt(props.second);
   return (
     <div>
-        Result = {props.first}+{props.second}
+        1: Result = {props.first}+{props.second}
         <hr />
-        result = `${props.first}+${props.second}`;
+        2 : result = `${props.first}+${props.second}`;
         <hr />
-        result = {result};
+        3: result = {result};
         <hr/>
         final ={rightResult};
     </div>
