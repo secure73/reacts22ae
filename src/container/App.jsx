@@ -1,5 +1,6 @@
-import "../src/layout/App.css";
-import Jedi from "./components/Jedi";
+import React from "react";
+import '../assets/css/App.css'; 
+import Jedi from "../components/Jedi";
 function App() {
   return (
     <div className="App">
