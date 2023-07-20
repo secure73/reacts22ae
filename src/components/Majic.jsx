@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Majic(props) {
   return (
-    <div class="flex justify-center">
-      <div className="w-1/2 mb-5">
+    <div class="">
+      <div className="">
         <div className={props.color}>
           <div className="rounded-lg shadow p-4">
             <h2 class="text-xl font-bold">{props.magicName}</h2>
