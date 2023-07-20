@@ -31,6 +31,7 @@ export default function Jedi(props) {
       <div className=" border-2 p-5 grid grid-cols-4 gap-4 ">
         <br />
         {countPower ? (
+            //Because create majic returns array of components , we can use them directly as follow
           <div>{createMajic(countPower)}</div>
         ) : (
           <span>no power</span>
