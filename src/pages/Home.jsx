@@ -1,9 +1,9 @@
 import React from "react";
-
+import MySection from "../components/pages/home/MySection";
 
 function Home() {
   return (
-    <div>Home</div>
+    <MySection/>
   )
 }
 
