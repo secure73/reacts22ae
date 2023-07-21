@@ -5,8 +5,11 @@ import Footer from "../components/layout/Footer";
 export default function Layout({ children }) {
   return (
     <Fragment>
-      <Navbar />
-      <main>
+      <span className="mb-20 pb-10">
+        <Navbar />
+      </span>
+
+      <main className="pt-10">
         <div
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
           style={{ minheight: "75vh" }}

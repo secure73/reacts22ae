@@ -9,7 +9,7 @@ const MainRouter = () => {
     <Layout>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/magic" exact element={<Magic />} />
+        <Route path="/magic" element={<Magic />} />
       </Routes>
     </Layout>
   );
