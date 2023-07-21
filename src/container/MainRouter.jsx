@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router";
-import { Empty } from "../pages/Empty";
 import { Home } from "../pages/Home";
 import Layout from "../layout/Layout";
 
