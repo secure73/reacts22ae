@@ -1,10 +1,17 @@
 import React from "react";
-import MySection from "../components/pages/home/MySection";
+import { useState } from "react";
+import Kitchen from "../components/pages/magic/Kitchen";
 function Magic() {
+  const [cacke, setCake] = useState(0);
   return (
-    <div>Magic
-        <MySection/>
-    </div>
+    <div>
+    <div>Magic use state!!!</div>
+      <div>
+        Basket : {cacke}
+      </div>
+
+      <Kitchen addCake={setCake}/>
+  </div>
   )
 }
 
