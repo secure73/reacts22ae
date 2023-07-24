@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
-import { Axios } from "axios";
+import HttpService from "../service/HttpService";
 
 function Products() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
 
-  const fetchData = async () => {
-    try {
-      const response = await Axios.get('https://dummyjson.com/products').then(response)
+  const apires =()=>{
 
-      setData(response.data); // Save the fetched data to the state
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+      //let data = HttpService.get('https://dummyjson.com/products');
+  }
 
   useEffect(() => {
-    console.log(data);
+    console.log(data.length);
+    if  (data.length ===0)
+    {
+        HttpService.get('https://dummyjson.com/products').then((res)=>{
+        
+        //console.log(res);
+        setData(res.data.products);
+        return false;
+    }).catch((error) => {
+        console.log(error)
+    });
+    }
+   
   }, [data]);
 
   return (
