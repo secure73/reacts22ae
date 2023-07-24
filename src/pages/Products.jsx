@@ -5,25 +5,17 @@ import HttpService from "../service/HttpService";
 function Products() {
   const [data, setData] = useState([]);
 
-  const apires =()=>{
-
-      //let data = HttpService.get('https://dummyjson.com/products');
-  }
-
   useEffect(() => {
     console.log(data.length);
     if  (data.length ===0)
     {
         HttpService.get('https://dummyjson.com/products').then((res)=>{
-        
-        //console.log(res);
         setData(res.data.products);
         return false;
     }).catch((error) => {
         console.log(error)
     });
     }
-   
   }, [data]);
 
   return (
