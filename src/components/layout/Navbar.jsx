@@ -7,6 +7,7 @@ function Navbar() {
         <div className="text-sm lg:flex-grow p-10 space-x-5">
           <NavItem name="Home" to="/" />
           <NavItem name="Magics" to="./magic" />
+          <NavItem name="products" to="./products" />
         </div>
       </div>
     </nav>

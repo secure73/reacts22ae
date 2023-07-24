@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router";
 import Home from "../pages/Home";
 import Magic from "../pages/Magic";
 import Layout from "../layout/Layout";
+import Products from "../pages/Products";
+import Product from "../pages/Product";
 
 const MainRouter = () => {
   return (
@@ -10,6 +12,9 @@ const MainRouter = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/magic" element={<Magic />} />
+        <Route path="/product" exact element={<Product />} />
+        <Route path="/products" exact element={<Products />} />
+
       </Routes>
     </Layout>
   );
