@@ -5,6 +5,7 @@ import Magic from "../pages/Magic";
 import Layout from "../layout/Layout";
 import Products from "../pages/Products";
 import Product from "../pages/Product";
+import Users from "../pages/Users";
 
 const MainRouter = () => {
   return (
@@ -14,6 +15,7 @@ const MainRouter = () => {
         <Route path="/magic" element={<Magic />} />
         <Route path="/product" exact element={<Product />} />
         <Route path="/products" exact element={<Products />} />
+        <Route path="/users" exact element={<Users />} />
 
       </Routes>
     </Layout>
