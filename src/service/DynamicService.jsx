@@ -1,14 +1,18 @@
 import ApiService from "./HttpService";
-const APIList = [{name:"default",address:"https://example.api"}];
+const APIList = [{name:"default",address:"https://dummyjson.com/"}];
 
 function findApiByName(xname) {
     return APIList.find((element) => {
+        if(xname === '')
+        {
+            xname = "default";
+        }
         return element.name === xname;
     })
 }
 const DynamicService = {
 
-    post: async (apiName, apiController = 'index', apiMethod = 'get', Id = '', payload) => {
+    post: async ( apiController, apiMethod = 'get', Id = '', payload, apiName = '') => {
         let { apiAddress } = findApiByName(apiName);
         
         if (Id) {

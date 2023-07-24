@@ -1,8 +1,10 @@
 import React from 'react'
-
+import { Fragment } from 'react'
 function Products() {
   return (
-    <div>Products</div>
+    <Fragment>
+        <div>Products</div>
+    </Fragment>
   )
 }
 
