@@ -14,7 +14,7 @@ const DynamicService = {
 
     post: async ( apiController, apiMethod = 'get', Id = '', payload, apiName = '') => {
         let { apiAddress } = findApiByName(apiName);
-        
+        let apiToCall = apiAddress;
         if (Id) {
             apiToCall = apiAddress + apiController + '/' + Id;
         }
